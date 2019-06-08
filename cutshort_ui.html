@@ -1,0 +1,486 @@
+<!doctype html >
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Ela Admin - HTML5 Admin Template</title>
+    <meta name="description" content="Ela Admin - HTML5 Admin Template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/font-awesome@4.7.0/css/font-awesome.min.css">
+  
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="stylesheet" type="text/css" href="https://cdn.materialdesignicons.com/1.1.34/css/materialdesignicons.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/flags.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+
+    <style>
+
+        	ul{
+		margin:0;
+		padding:0;
+		list-style:none;
+	}
+#cc1
+{
+height:28px;
+line-height:28px;
+border:1px solid #ccc;
+border-left:none;
+outline:none;
+padding-left:10px;
+
+}
+	.filtr-box li a {
+		color:#000;
+		border:solid 1px #CCC;
+		float: left;
+
+    border-right:none;
+		line-height: 28px;
+		height: 30px;
+		text-decoration: none;
+		padding: 0 10px;
+		background: url(https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png) 38px center no-repeat #fff;
+    background-size:14px;
+		background-color: #FFF;
+		cursor:pointer;
+	}
+	.filtr-box li a img{
+		margin-top:8px;
+	}
+	.filtr-box li ul {
+		background: #FFF;
+		border:solid 1px #CCC;
+		display: none;
+		left: 0;
+		max-height: 395px;
+		overflow: hidden;
+		position: absolute;
+		top: 30px;
+
+		z-index: 99999;
+	}
+	.filtr-box li {
+
+	}
+	.filtr-box li ul li a {
+		width:100%;
+		height: 26px;
+		line-height: 24px;
+		background-image: none;
+		border:solid 0px #CCC;
+	}
+	.filtr-box li ul li a img {
+		margin-top:auto;
+	}
+	.filtr-box li ul li a:hover {
+		background:#CCC;
+	}
+
+    </style>
+    <style>
+
+        //*[@id="flagstrap-78Q9OEXK"]
+
+
+
+    </style>
+</head>
+
+<body ng-app="userApp">
+    <!-- Left Panel -->
+    <aside id="left-panel" class="left-panel">
+        <nav class="navbar navbar-expand-sm navbar-default">
+            <div id="main-menu" class="main-menu collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                <li class="nalika-profile" style="padding: 20px;position: relative;z-index: 99999; border-bottom: 1px solid #e8e9ed;">
+				<div class="profile-dtl" style="text-align: center; padding: 13px;">
+					<a href="#"><img src="images/av-1.jpg" alt="" style="width: 100px;height: 100px;border-radius: 50%;">
+						<div style="position: absolute;top: 109px;left: 157px;width: 39px;height: 39px;background-color: #fff;border-radius: 70px;"><i style="position: absolute;top: 7px;left: 8px;font-size: 23px;" class="fa fa-gear" style="color: #a29d9d;"></i></div>
+						
+					</a >
+					<div style="margin-top: 12px;">
+					<a style="font-size: 14px;color: #413d3d;font-weight: 600;">Martha <span class="min-dtn">Blair</span></a>
+                    <a style="background: #49a342; content: ''; position: absolute; right: 84px; bottom: 10px;width: 11px; height: 11px; border-radius: 100%; border: 2px solid white; z-index: 1; top:154px;"></a>
+                        <br>
+					<a style="font-size: 13px;color: #a8a4a4;"> Developer </a>
+					</div>
+					
+				</div>
+				<!--<div class="profile-social-dtl">-->
+					<!-- <ul class="dtl-social">
+						<li><a href="#"><i class="icon nalika-facebook"></i></a></li>
+						<li><a href="#"><i class="icon nalika-twitter"></i></a></li>
+						<li><a href="#"><i class="icon nalika-linkedin"></i></a></li>
+					</ul> -->
+				</li>	
+
+
+
+                    <!-- /.menu-title -->
+                    <li class="menu-item-has-children active dropdown" style="background: #fff;">
+                        <a href="#" class="dropdown-toggle " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-view-dashboard"></i>&nbsp;&nbsp;&nbsp;Dashboard</a>
+                        <ul class="sub-menu children dropdown-menu border-bottom">                            
+                        	<li class="active"><a href="ui-buttons.html">Page Visitors</a></li>
+                            <li><a href="ui-badges.html">Post Performance</a></li>
+                            <li><a href="ui-badges.html">Team Overall</a></li>
+                        </ul>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="border-bottom" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-calendar-today" data-name="mdi-calendar-today"></i>&nbsp;&nbsp;&nbsp;Calendar</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="border-bottom" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-inbox" data-name="mdi-inbox"></i>&nbsp;&nbsp;&nbsp;Inbox</a>
+                    </li>
+                    <li class="menu-item  ">
+                        <a href="#" class="border-bottom" aria-haspopup="true" aria-expanded="false"> <i class="mdi mdi-credit-card" data-name="mdi-credit-card"></i>&nbsp;&nbsp;&nbsp;Invoicing</a>
+                    </li>
+                    <li class="menu-item ">
+                        <a href="#" class="border-bottom" aria-haspopup="true" aria-expanded="false"><i class="mdi mdi-thermometer" data-name="mdi-thermometer"></i>&nbsp;&nbsp;&nbsp;Lab /Experimental</a>
+                    </li>
+
+                    <li>
+                    	<span class="nav-link">
+			              <div class="mt-4">
+			                  <p  style="font-size: 14px;" class="text-secondary">RECENTLY VIEWED</p>                  
+			                </div>
+			               <ul style="list-style: none;">                            
+                        	<li style="margin-top: -20px;"><a style="font-size: 13px;">Overall Perfomance</a></li>
+                            <li style="margin-top: -20px;"><a style="font-size: 13px;" >Invoice #940</a></li>
+                            <li style="margin-top: -20px;"><a style="font-size: 13px;">Customer: Minerva Viewer</a></li>
+                        </ul>
+            			</span>
+                    </li>
+                 
+                </ul>
+
+            </div><!-- /.navbar-collapse -->
+        </nav>
+    </aside>
+    <!-- /#left-panel -->
+    <!-- Right Panel -->
+    <div id="right-panel" class="right-panel">
+        <!-- Header-->
+        <header id="header" class="header">
+            <div class="top-left">
+                <div class="navbar-header">
+                    <a class="navbar-brand" style="text-align: center;position: relative;left: -12px;"><i style="color: #a29d9d;" class="fa fa-home"></i></a>
+                    <a  class="menutoggle" style="margin-left: 12px;">Dashboard</a>
+                    <a class="navbar-brand hidden" href="./"><img src="images/logo2.png" alt="Logo"></a>
+                </div>
+            </div>
+            <div class="top-right">
+                <div class="header-menu">
+                    <div class="header-left">
+                                <div id="options" style="top: 13px;"
+                                     data-input-name="country2"
+                                     data-selected-country="GB">
+                                </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- /#header -->
+        <!-- Content -->
+        <div class="content" style="background-color: #fff;">
+            <!-- Animated -->
+            <div class="animated fadeIn">
+                <!-- Widgets  -->
+               
+                <!-- /Widgets -->
+                <!--  Traffic  -->
+
+                <div class="row">
+                	<div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+                            <div class="card">
+                            	<div class="card-header" style="background-color: #fff;">
+                                <a>Daily Visitors</a>
+                                <select class="custom-select ng-pristine ng-valid ng-touched" name="pageSize" style="width: auto; float:right;"><option value="0: 2">2019</option><option value="1: 4">2018</option><option value="2: 6">2017</option></select>
+                                <select class="custom-select ng-pristine ng-valid ng-touched" name="pageSize" style="width: auto; float:right; margin-right: 5px;"><option value="0: 2">December</option><option value="1: 4">Novomber</option><option value="2: 6">October</option></select>
+                                </div>
+                                <div class="card-body">
+                                    <div id="morris_bar"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+               
+               <div class="row">
+                   <div class="col-lg col-md-6 col-sm-6 mb-4">
+                       <div class="card">
+                           <div class="card-body">
+                           <div class="stats-small stats-small--1 card card-small" style="box-shadow: 0 0 20px #fff;">
+                           <div class="d-flex flex-column m-auto">
+                              <div class="stats-small__data text-center" style="padding: 15px;">
+                                <span class="stats-small__label text-uppercase" style="color: #a8a4a4; font-size: 13px;">REALTIME USERS</span>
+                                <h6 class=" " style="font-size: 36px;">56</h6>
+                                  <a class="stats-small__percentage stats-small__percentage--increase" style="color: green;">+4.7% <i class="mdi mdi-arrow-up"></i> </a>
+                              </div>
+
+                           </div>
+                           <div class="card-body p-0 d-flex">
+                               <canvas height="120" class="blog-overview-stats-small-1"></canvas>
+                           </div>
+                       </div>
+                           </div>
+
+                       </div>
+                   </div>
+                   <div class="col-lg col-md-6 col-sm-6 mb-4">
+                       <div class="card">
+                           <div class="card-body">
+                       <div class="stats-small stats-small--1 card card-small" style="box-shadow: 0 0 20px #fff;">
+                           <div class="d-flex flex-column m-auto">
+                              <div class="stats-small__data text-center" style="padding: 15px;">
+                                <span class="stats-small__label text-uppercase" style="color: #a8a4a4; font-size: 13px;">TOTAL VISITS</span>
+                                <h6 class="" style="font-size: 36px;">54,598</h6>
+                                <a style="color: #d35959;" >-11.9% <i class="mdi mdi-arrow-down"></i></a>
+                              </div>
+                           </div>
+                           <div class="card-body p-0 d-flex">
+                               <canvas height="120" class="blog-overview-stats-small-2"></canvas>
+                           </div>
+                       </div>
+                           </div>
+                       </div>
+                   </div>
+                   <div class="col-lg col-md-4 col-sm-6 mb-4">
+                       <div class="card">
+                           <div class="card-body">
+                       <div class="stats-small stats-small--1 card card-small" style="box-shadow: 0 0 20px #fff;">
+                           <div class="d-flex flex-column m-auto">
+                              <div class="stats-small__data text-center" style="padding: 15px;">
+                                <span class="stats-small__label text-uppercase" style="color: #a8a4a4; font-size: 13px;">BOUNCE RATE</span>
+                                <h6 class="" style="font-size: 36px;">73.67%</h6>
+                                  <a style="color: green;" >+12.2% <i class="mdi mdi-arrow-up"></i></a>
+                              </div>
+                            </div>
+                           <div class="card-body p-0 d-flex">
+                               <canvas height="120" class="blog-overview-stats-small-3"></canvas>
+                           </div>
+                           </div>
+                           </div>
+                       </div>
+                       </div>
+                   <div class="col-lg col-md-4 col-sm-6 mb-4">
+                       <div class="card">
+                           <div class="card-body">
+                           <div class="stats-small stats-small--1 card card-small" style="box-shadow: 0 0 20px #fff;">
+                               <div class="d-flex flex-column m-auto">
+                                  <div class="stats-small__data text-center" style="padding: 15px;">
+                                    <span class="stats-small__label text-uppercase" style="color: #a8a4a4; font-size: 13px;">VISIT DURATION</span>
+                                    <h6 class="" style="font-size: 36px;">1m 4s</h6>
+                                      <a style="color: green;" >+19.6% <i class="mdi mdi-arrow-up"></i></a>
+                                  </div>
+                               </div>
+                               <div class="card-body p-0 d-flex">
+                                   <canvas height="120" class="blog-overview-stats-small-4"></canvas>
+                               </div>
+                           </div>
+                           </div>
+                       </div>
+                       </div>
+                </div>
+            
+                <div class="clearfix"></div>
+                <!-- Orders -->
+                <div class="orders">
+                    <div class="row" ng-controller="userController">
+                        <div class="col-xl-8 " style="padding-right: 0px;padding-left:0px;">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="box-title">Most Visited Pages </h4>
+                                </div>
+                                <div class="card-body--">
+                                    <div class="table-stats ">                                      
+                                        <table class="table ">
+                                            <thead>
+                                                <tr style="border-bottom: solid 1px #f0eaea99; border-top: solid 1px #f0eaea99;">
+                                                    <th style=" background:#fff;">PAGE NAME</th>
+                                                    <th style="background:#fff;"></th>
+                                                    <th style="background:#fff;">VISITORS</th>
+                                                    <th style="background:#fff;">UNIQUE PAGE VISITS</th>
+                                                    <th style="background:#fff;">BOUNCE RATE</th>
+                                                    <th style="background:#fff;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr ng-repeat="x in userslist track by $index" style="border-bottom: solid 1px #f0eaea99;">
+                                                    <td>  <span style="font-size: 12px;color: #5c5a5a;">{{ x.name }}</span> </td>
+                                                    <td><i style="font-size: 24px; color: #ada8a8;" class="mdi mdi-launch" data-name="mdi-launch"></i></td>
+                                                    <td> <span style="font-weight: 400;">{{ x.visit}}</span> </td>
+                                                    <td><span style="font-weight: 400;">{{ x.u_visit}}</span></td>
+                                                    <td><a style="font-weight: 400;">{{x.u_per}}</a> </td>
+                                                    <td><span class="card-body p-0 d-flex"><canvas height="120" class="{{x.ng_chart}}"></canvas></span></td>
+                                                </tr>
+
+                                            </tbody>
+                                        </table>
+
+                                    </div> <!-- /.table-stats -->
+                                </div>
+                            </div> <!-- /.card -->
+                        </div>  <!-- /.col-lg-8 -->
+
+                        <div class="col-xl-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="box-title">Social Media Traffic </h4>
+                                </div>
+                                <div class="card-body--"  >
+                                    <div class="table-stats ">
+                                        <table class="table ">
+                                            <thead>
+                                                <tr style="border-bottom: solid 1px #f0eaea99; border-top: solid 1px #f0eaea99; height: 54px;">
+                                                    <th style="background:#fff;">NETWORK</th>
+                                                    <th style="background:#fff;">VISITORS</th>
+                                                    <th style="background:#fff;"></th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr style="border-bottom: solid 1px #f0eaea99; height: 77px;">
+                                                    <td>  <span style="font-size: 12px;color: #5c5a5a;">Instagram</span> </td>
+                                                    <td> <span style="font-weight: 400;">3,550</span> </td>
+                                                    <td style="width: 100%;"><div class="progress progress-xs mt-3 mb-0 " style="background: #6880c6; width: 90%; height: 5px;"></div></td>
+
+                                                </tr>
+                                            <tr style="border-bottom: solid 1px #f0eaea99; height: 77px;">
+                                                    <td>  <span style="font-size: 12px;color: #5c5a5a;">Facebook</span> </td>
+                                                    <td> <span style="font-weight: 400;">2,236</span> </td>
+                                                <td style="width: 100%;"><div class="progress progress-xs mt-3 mb-0 " style="background: #6880c6; width: 60%; height: 5px;"></div></td>
+
+
+                                                </tr>
+                                            <tr style="border-bottom: solid 1px #f0eaea99; height: 77px;">
+                                                    <td>  <span style="font-size: 12px;color: #5c5a5a;">Twitter</span> </td>
+                                                    <td> <span style="font-weight: 400;">1,795</span> </td>
+                                                <td style="width: 100%;"><div class="progress progress-xs mt-3 mb-0 " style="background: #6880c6; width: 30%; height: 5px;"></div></td>
+
+
+                                                </tr>
+                                            <tr style=" height: 73px;">
+                                                    <td style="border-bottom: 1px solid #fff;">  <span style="font-size: 12px;color: #5c5a5a;">Linkedin</span> </td>
+
+                                                    <td style="border-bottom: 1px solid #fff;"> <span style="font-weight: 400;" >62</span> </td>
+                                                <td style="width: 100%; border-bottom: 1px solid #fff;"><div class="progress progress-xs mt-3 mb-0 " style=" background: #6880c6; width: 10%; height: 5px;"></div></td>
+
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div> <!-- /.table-stats -->
+
+
+                                </div>
+                            </div>
+                        </div> <!-- /.col-md-4 -->
+                    </div>
+                </div>
+
+            <!-- /#add-category -->
+            </div>
+            <!-- .animated -->
+        </div>
+        <!-- /.content -->
+        <div class="clearfix"></div>
+        <!-- Footer -->
+
+        <!-- /.site-footer -->
+    </div>
+    <!-- /#right-panel -->
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@2.2.4/dist/jquery.min.js"></script>
+    <!--<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.4/dist/umd/popper.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-match-height@0.7.2/dist/jquery.matchHeight.min.js"></script>
+    <!--<script src="assets/js/main.js"></script>-->
+
+    <!--  Chart js -->
+    <!--<script src="https://cdn.jsdelivr.net/npm/chart.js@2.7.3/dist/Chart.bundle.min.js"></script>-->
+
+    <!--Chartist Chart-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/chartist@0.11.0/dist/chartist.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/chartist-plugin-legend@0.6.2/chartist-plugin-legend.min.js"></script>-->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/jquery.flot@0.8.3/jquery.flot.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/flot-pie@1.0.0/src/jquery.flot.pie.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/flot-spline@0.0.1/js/jquery.flot.spline.min.js"></script>-->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/simpleweather@3.1.0/jquery.simpleWeather.min.js"></script>-->
+    <!--<script src="assets/js/init/weather-init.js"></script>-->
+
+    <!--<script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/moment.min.js"></script>-->
+    <!--<script src="https://cdn.jsdelivr.net/npm/fullcalendar@3.9.0/dist/fullcalendar.min.js"></script>-->
+    <!--<script src="assets/js/init/fullcalendar-init.js"></script>-->
+
+    <script src="js/charts/morris-bundle/raphael.min.js"></script>
+    <script src="js/charts/morris-bundle/morris.js"></script>
+    <script src="js/charts/morris-bundle/Morrisjs.js"></script>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+     <script src="https://unpkg.com/shards-ui@latest/dist/js/shards.min.js"></script>
+     <script src="js/app-blog-overview.1.1.0.js"></script>
+
+
+
+
+
+
+    <!--Local Stuff-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>-->
+    <script src="js/jquery.flagstrap.js"></script>
+    <script>
+
+        		$('#options').flagStrap({
+        countries: {
+            "AU": "AUS",
+            "GB": "ENG",
+            "US": "NYK"
+        },
+        buttonSize: "btn-sm",
+        buttonType: "btn-info",
+        labelMargin: "10px",
+        scrollable: false,
+        scrollableHeight: "350px"
+    });
+
+
+    </script>
+
+<script>
+
+if(typeof angular == 'undefined') {
+       document.write(unescape("%3Cscript type='text/javascript' src='/Scripts/angular.min.js'%3E%3C/script%3E"));
+     }else{
+
+     console.log("hi");
+     }
+
+    var app = angular.module('userApp', []);
+
+    app.controller('userController', function($scope) {
+    	$scope.userslist = [{name:'/store/',visit:'4,890',u_visit:'3,985',u_per:'81.56%',ng_chart:'blog-overview-stats-small-9'},
+    	                    {name:'/store/symbols-styleguides',visit:'3,785',u_visit:'3,182',u_per:'62.56%',ng_chart:'blog-overview-stats-small-6'},
+    	                    {name:'/store/dashboard-ui-kit',visit:'2,985',u_visit:'2,115',u_per:'56.76%',ng_chart:'blog-overview-stats-small-7'},
+    	                    {name:'/store/webflow-cards.html',visit:'2,440',u_visit:'1,789',u_per:'39.59%',ng_chart:'blog-overview-stats-small-8'},
+    	];
+
+
+
+
+
+    });
+
+</script>
+
+</body>
+</html>
